@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tindog</title>
+  </head>
+  <body>
+    <header>
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-profile.png" alt="icon-logo" />
+        <img class="app-icon" src="./images/logo.png" alt="app-logo" />
+        <img class="icon" src="./images/icon-chat.png" alt="chat-logo" />
+      </div>
+    </header>
+    <main>
+      <!-- dog picture renders here -->
+      <div id="profile-container" class="profile-container"></div>
+      <div class="cross-like-container">
+        <button id="cross-btn" class="cross-btn">
+          <img class="cross-like" src="./images/icon-cross.png" alt="" />
+        </button>
+        <button id="heart-btn" class="heart-btn">
+          <img class="cross-like" src="./images/icon-heart.png" alt="" />
+        </button>
+      </div>
+    </main>
+    <script src="/index.js" type="module"></script>
+  </body>
+</html>

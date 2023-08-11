@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  padding: 0.75em 0em;
+  align-items: center;
+  max-width: 475px;
+  margin: 0 auto;
+}
+
+.icon-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.app-icon {
+  width: 4.5rem;
+  height: 2.25rem;
+}
+
+.profile-container {
+  width: 26.5em;
+  height: 34em;
+  margin: 0 auto;
+}
+
+.dog-picture {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 3%;
+  height: 510px;
+}
+
+.cross-like-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -27px;
+}
+
+.cross-like {
+  padding: 0.35em;
+  width: 80%;
+  height: auto;
+}
+
+button {
+  margin: 0.3em 0.6em;
+  padding: 0.6em;
+  border-style: solid;
+  background-color: white;
+  border-color: rgb(244, 240, 240);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.heart-btn:hover {
+  background-color: #beefe1;
+  border: none;
+  transform: scale(1.1);
+}
+
+.cross-btn:hover {
+  border: none;
+  transform: scale(1.1);
+  background-color: #f4d5df;
+}
+
+h2 {
+  color: rgba(248, 248, 248, 1);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: rgba(183, 183, 183, 1);
+  margin: 0;
+  padding: 0;
+}
+
+.dog-info {
+  position: absolute;
+  padding-left: 0.75em;
+  bottom: 5.2em;
+}
+
+/* style for like and nope badges appearing on the screen */
+.badge {
+  position: absolute;
+  float: right;
+  width: 135px;
+  margin-top: 2em;
+  margin-left: 0.6em;
+  transform: rotate(-30deg);
+}
+
+/* style for message when no more dogs are available */
+.no-more-dogs {
+  background-color: rgb(44, 102, 102);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+/* hiding like and cross badges before user click any button*/
+.hidden {
+  display: none;
+}
+
+/* media query only*/
+@media screen and (max-width: 480px) {
+  body,
+  .profile-container {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 400px) {
+  header {
+    padding: 0.75em 1em;
+  }
+}
