@@ -1,1 +1,1 @@
-# Tindog-funny-Tinder-clone
+# tindog-funny-tinder-clone
